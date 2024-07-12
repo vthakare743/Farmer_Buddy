@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="USER_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+       <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <%-- <script type="text/javascript">
+         function DisableBack() {
+             window.history.forward();
+         }
+         DisableBack();
+         window.onload = DisableBack;
+         window.onpageshow = function (evt) {
+             if (evt.persisted) DisableBack();
+         }
+         window.onunload = function () {
+             void (0);
+         }
+</script>--%>
+
+
+   
+</head>
+<body>
+
+<form runat="server">
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">KRUSHI </br> <h5>(The Farmer Hub) </h5></a>
+            </div>
+
+            <div class="header-right">
+
+                <%--<a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>--%>
+                <a href="../Default.aspx" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                             <asp:Image ID="Image1" runat="server" class="img-thumbnail" />
+
+                            <div class="inner-text">
+                               <asp:Label ID="lblmsg" runat="server" Text="User Name" 
+                         Font-Bold="True" Font-Italic="True" Font-Size="X-Large"></asp:Label>
+                            <br />
+                                <small>Last Login : 2 Weeks Ago </small>
+                            </div>
+                        </div>
+
+                    </li>
+
+<%--
+                    <li>
+                        <a class="active-menu" href="Default.aspx"><i class="fa fa-dashboard "></i>Dashboard</a>
+                    </li>--%>
+                    <li>
+                        <a href="Default.aspx"><i class="fa fa-desktop "></i>Home <span class="fa arrow"></span></a>
+                        
+                    </li>
+                     <li>
+                        <a href="Editprofile.aspx"><i class="fa fa-yelp "></i>Grains <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="Addgrains.aspx"><i class="fa fa-coffee"></i>Add Grains</a>
+                            </li>
+                            <li>
+                                <a href="Editgrains.aspx"><i class="fa fa-flash "></i>Edit Grains</a>
+                            </li>
+                            
+                            
+                           
+                        </ul>
+                    </li>
+                     <li>
+                        <a href=""><i class="fa fa-yelp "></i>Dream Rate <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="SearchTrader.aspx"><i class="fa fa-coffee"></i>Search Trader</a>
+                            </li>
+                            <li>
+                              <!--  <a href="Recommendedtrader.aspx"><i class="fa fa-flash "></i>Recommended Trader</a>  -->
+                            </li>
+                            
+                            
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-yelp "></i>Facilities<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="ShowVideo.aspx"><i class="fa fa-coffee"></i>Agree videos</a>
+                            </li>
+                            <li>
+                                <a href="WeatherInfo.aspx"><i class="fa fa-flash "></i>Weather</a>
+                            </li>
+                             
+                            <li>
+                                <a href="ExpertAdvice.aspx"><i class="fa fa-coffee"></i>Expert Advice</a>
+                            </li>
+                         </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-flash "></i>Settings<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="Editprofile.aspx"><i class="fa fa-coffee"></i>Edit Profile</a>
+                            </li>
+                            <li>
+                                <a href="Userchangepwdaspx.aspx"><i class="fa fa-flash "></i>Change Password</a>
+                            </li>
+                            
+                            
+                           
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="../Default.aspx"><i class="fa fa-bicycle "></i>Logout <span class="fa arrow"></span></a>
+                         
+                   
+                   
+                    
+                </li>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+             
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+    <div id="footer-sec">
+        &copy; 2020 
+    </div>
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+       <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+    </form>
+
+</body>
+</html>

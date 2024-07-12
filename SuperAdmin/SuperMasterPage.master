@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SuperMasterPage.master.cs" Inherits="SuperAdmin_MasterPage" %>
+
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+
+    <link href="css/basic.css" rel="stylesheet" />
+    <link href="css/Bootstrap.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/font-awesome..css" rel="stylesheet" />
+
+   
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+
+<form id="Form2" runat="server">
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Default.aspx">KRUSHI </br> <h5>(The Farmer Hub) </h5></a>
+            </div>
+
+            <div class="header-right">
+
+                <%--<a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>--%>
+                <a href="../Default.aspx" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="../web_img/admin.jpg" class="img-thumbnail" />
+
+                            <div class="inner-text">
+                               Super Admin
+                            <br />
+                                <small></small>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    
+
+                    <li>
+                        <a href="#"><i class="fa fa-university"></i>Setting <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="RoleCreation.aspx"><i class="fa fa-university"></i>Role Creation</a>
+                            </li>
+                           
+                             <li>
+                                <a href="ViewSchemes.aspx"><i class="fa fa-university"></i>User Group Creation </a>
+                            </li>
+
+                             <li>
+                                <a href="ViewSchemes.aspx"><i class="fa fa-university"></i>Feature Creation Creation </a>
+                            </li>
+                             <li>
+                                <a href="ViewSchemes.aspx"><i class="fa fa-university"></i>Role, Group, Feature Mapping </a>
+                            </li>
+                             <li>
+                                <a href="ViewSchemes.aspx"><i class="fa fa-university"></i>User Group Client mpping </a>
+                            </li>
+
+                            </ul>
+                        </li>
+
+                     <li>
+                        <a href="#"><i class="fa fa-video-camera "></i>User Configurtion <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            
+                             <li>
+                                <a href="AddVideo.aspx"><i class="fa fa-video-camera "></i>User Creation </a>
+                            </li>
+                             <li>
+                                <a href="ViewVideo.aspx"><i class="fa fa-video-camera "></i>User Access Mapping </a>
+                           
+                           </li>
+                           
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-yelp "></i>Clarity Business <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            
+                             <li>
+                                <a href="AddManagement.aspx"><i class="fa fa-yelp"></i>Vendors-Insurance Carriers </a>
+                            </li>
+                             <li>
+                                <a href="ViewManagement.aspx"><i class="fa fa-yelp"></i>Clients-Employees </a>
+                           
+                           </li>
+                              <li>
+                                <a href="ViewManagement.aspx"><i class="fa fa-yelp"></i>Members-Employees </a>
+                           
+                           </li>
+                           
+                        </ul>
+                        </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-coffee "></i>Features <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="AddArticles.aspx"><i class="fa fa-coffee"></i>Multiple Services</a>
+                            </li>
+                           
+                             <li>
+                                <a href="ViewArticles.aspx"><i class="fa fa-coffee"></i>Multiple Processes </a>
+                            </li>
+                            </ul>
+                        </li>
+
+                    <li>
+                        <a href="ViewInsurance.aspx"><i class="fa fa-yelp "></i>Reports<span class="fa arrow"></span></a>
+
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="AddInsurance.aspx"><i class="fa fa-yelp"></i>Report 1 </a>
+                            </li>
+
+                            <li>
+                                <a href="AddInsurance.aspx"><i class="fa fa-yelp"></i>Report 2 </a>
+                            </li>
+                            <li>
+                                <a href="AddInsurance.aspx"><i class="fa fa-yelp"></i>Report 3 </a>
+                            </li>
+                           
+                             <li>
+                                <a href="ViewInsurance.aspx"><i class="fa fa-yelp"></i>Report 4 </a>
+                            </li>
+                            </ul>
+                        </li>
+                     
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+    <div id="footer-sec">
+        &copy; 2023
+    </div>
+    <script src="css/bootstrap.js"></script>
+    <script src="css/custom.js"></script>
+    <script src="css/jquery.metisMenu..js"></script>
+
+    <script src="jquery.js"></script>
+    
+    </form>
+
+</body>
+</html>
+
+

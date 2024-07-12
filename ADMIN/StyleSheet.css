@@ -1,0 +1,117 @@
+﻿
+#first
+{
+    background:linear-gradient(to right,red, yellow);
+    /*background-color:gold;*/
+    height:160px;
+    width:350px;
+    border-radius:20px;
+    color:white;
+    text-align:center;
+    
+}
+
+    #first:hover
+    {
+        color: black;
+    }
+
+#second
+{
+     background:linear-gradient(to right,blue, aqua);
+    /*background-color:aqua;*/
+    height:160px;
+    width:350px;
+    border-radius:20px;
+    color:white;
+    text-align:center;
+}
+
+#second:hover
+{
+    color: black;
+}
+
+#third
+{
+    background:linear-gradient(to right,GrayText, lightsteelblue);
+    /*background-color:lightsteelblue;*/
+    height: 160px;
+    width: 350px;
+    border-radius:20px;
+    color:white;
+    text-align:center;
+}
+
+#third:hover
+{
+    color: black;
+}
+
+#forth
+{
+     background:linear-gradient(to right,indigo,violet);
+    /*background-color:GrayText;*/
+    height: 160px;
+    width: 350px;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+}
+
+#forth:hover
+{
+    color: black;
+}
+
+#Div1
+{
+    background:linear-gradient(to right,green, lime);
+    /*background-color:lime;*/
+    height: 160px;
+    width: 350px;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+
+}
+
+#Div1:hover
+{
+    color: black;
+}
+
+#Div2
+{
+    background:linear-gradient(to right,olive,#b3e916);
+    /*background-color:olive;*/
+    height: 160px;
+    width: 350px;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+}
+
+#Div2:hover
+{
+    color: black;
+}
+
+h3:hover
+{
+    color: white;
+    font-family: 'Book Antiqua';
+   
+}
+
+h2:hover {
+    color: white;
+    font-family: 'Book Antiqua';
+}
+
+p:hover
+{
+    color: white;
+    font-family: 'Book Antiqua';
+}
+

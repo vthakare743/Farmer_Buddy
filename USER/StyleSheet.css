@@ -1,0 +1,23 @@
+﻿body {
+     text-align: center;
+}
+
+#first 
+{
+    background:linear-gradient(to right,aqua,white);
+    /*background-color:gold;*/
+    height:250px;
+    width:270px;
+    border-radius:20px;
+    color:black;
+    text-align:center;
+    border-color:ActiveBorder;
+    font-size:large;
+    
+}
+
+    #first:hover
+    {
+        color: white;
+    }
+   
